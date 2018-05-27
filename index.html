@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dragon's Breath</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+<div class="jumbotron"> 
+<h1 class="text-center">Dragon's Breath</h1>
+  <p class="text-center">Join our discord</p> 
+  <div class="row">
+  <div class="col"></div>
+  <a href="https://discord.gg/NCEGPK4" class="btn btn-primary active col" data-toggle="tooltip" title="Join the discord" data-placement="bottom">Discord</a>
+<div class="col"></div>
+
+  <a href="https://www.youtube.com/channel/UC3xiBJuwhaCg5WLPB_cq_PQ?view_as=subscriber" class="btn btn-primary active col" data-toggle="tooltip" title="Subscribe!!" data-placement="bottom">Youtube</a>
+  <div class="col"></div>
+</div>
+</div>
+	<script>
+	$(document).ready(function(){
+   	 $('[data-toggle="tooltip"]').tooltip(); 
+	});
+	</script>
+
+<img src="th.png" class="rounded float-left" alt="" width="304" hight="276">
+<img src="th.png" class="rounded float-right" alt="" width="304" hight="276">
+<p class="text-center display-4">We are all about gaming and coding</p>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class="jumbotron text-center">What I used to create this website</div>
+</br>
+</br>
+<div class="row">
+	<h2 class="col-sm-4 text-center"><img src="boot.jpg" class="rounded" width="204" hight="204">Bootstrap 4</h2>
+	<h2 class="col-sm-4 text-center"><img src="sublime.jpg" class="rounded" width="204" hight="204">Sublime</h2>
+	<h2 class="col-sm-4 text-center"><img src="git.png" class="rounded" width="204" hight="204">Github</h2>
+</div>
+</br>
+<h2 class="text-center">Contact</h2>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Darren</td>
+        <td>O'Neill</td>
+        <td>darrenoneill212@gmail.com</td>
+        <td>None</td>
+      </tr>
+  </tbody>
+</table>
+</br>
+<div class="jumbotron text-center">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</div>
+</br>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+</br>
+<h1 class="text-center">More Coming Soon</h1>
+
+
+</body>
+</html>
